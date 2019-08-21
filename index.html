@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07bb6216fc.js"></script>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/links.css">
     <title>Yonatan Snir</title>
 </head>
 <body>
+    <hr style="right: 25%"><hr><hr style="right: -25%">
     <header>
         <h1>YS</h1>
-        <h3>About me</h3>
+        <h3><a id="about-text" href="javascript:toggleResume(1)">About me</a></h3>
     </header>
+    <div id="closeabout" onclick="toggleResume(0)">
+        <div></div>
+    </div>
     <div id="about">
-        <div id="closeabout">
-            <div></div>
-        </div>
         <div id="resume">
             <h4>hello, I'm <strong>Yonatan Snir. </strong><br>
             <span>a web developer from Israel</span></h4>
+            <p>I have been livning in Rishon Lezion all my life and alway I atrracted for web deployet. since I 14 years old I build a website and stuff like that and now I'm computer since degree.</p>
+            <p>Lorem ipsum dolor sit amet, id diam, sapien metus tincidunt. Orci sollicitudin nullam porta faucibus, erat sollicitudin justo, in arcu, rerum earum et suspendisse. Interdum metus eu ac magnis. Id quisque pede elit sed id, sed donec tempor, suscipit at. Pretium et aliquet eros nulla nam, id ridiculus, suspendisse taciti ac ligula sem aliquam. Eget ultricies metus ultrices aenean wisi, erat venenatis arcu diam quisque, mauris sapien non, metus placerat sapien sollicitudin nec, a vitae aliquam lectus vitae. Cras ac, nullam non, eget tellus suspendisse. Varius eu consectetuer orci nisl vel. Augue aliquam vivamus pede, vel cras. Erat id dui, dolor porttitor nibh etiam mauris ornare ligula, pulvinar suspendisse, sollicitudin per felis blandit ante ultrices adipiscing, aliquam tincidunt erat lorem donec turpis. Wisi facilisis cras nonummy ut in, nulla dignissim ac, dui rhoncus sed magna neque parturient, nulla massa mattis ipsam mauris risus lectus</p>
         </div>
     </div>
     <div id="pages">
@@ -30,13 +34,11 @@
                 <h2>Hello, <strong>I'm Yonatan</strong></h2>
                 </div>
                 <div class="hide secoundshow">
-                <h2>a <span>full-stack</span> developer <br>and <span>UX</span> designer from Israel</h2>
+                <h2>a <span>full-stack</span> developer <br>and <span>UX Designer</span> from Israel</h2>
                 </div>
                 <div class="quote">"I don't care how it's look. I care how it's feel."
                     <br><button>SEE MY PROJECT</button>
                 </div>
-            </div>
-            <div class="me">
             </div>
         </div>
         <div id="tech" class="page">
@@ -47,44 +49,43 @@
         </div>
     </div>
     <footer>
-        <a href="javascript:page(0);">
-            <div class="msg" id="try1">Home
-                <div></div>
-            </div>
-        <div class="point point-on" id="point-homepage" onmouseover="show_msg('try1', true)" onmouseout="show_msg('try1', false)"></div></a>
-        <a href="javascript:page(-100)">
-            <div class="msg" id="try2">Home
-                <div></div>
-            </div>    
-        <div class="point" id="point-tech" onmouseover="show_msg('try2', true)" onmouseout="show_msg('try2', false)"></div></a>
-        <a href="javascript:page(-200);">
-            <div class="msg" id="try3">Home
-                <div></div>
-            </div>
-        <div class="point" id="point-another" onmouseover="show_msg('try3', true)" onmouseout="show_msg('try3', false)"></div></a>
+        <div class="page-indicator">
+            <a href="javascript:page(0);">
+                <div class="point point-on" id="point-homepage" onmouseover="show_msg('try1', true)" onmouseout="show_msg('try1', false)"></div>
+            </a>
+            <a href="javascript:page(-100)">  
+                <div class="point" id="point-tech" onmouseover="show_msg('try2', true)" onmouseout="show_msg('try2', false)"></div>
+            </a>
+            <a href="javascript:page(-200);">
+                <div class="point" id="point-another" onmouseover="show_msg('try3', true)" onmouseout="show_msg('try3', false)"></div>
+            </a>
+        </div>
+        <div class="socialmedia">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+        </div>
     </footer>
 <script type="text/javascript">
     var pages = document.getElementById("pages");
+    var about = document.getElementById("about");
+    var abouttext = document.getElementById("about-text");
+    var closeabout = document.getElementById("closeabout"); 
     function page(num){
         pages.style.transform = "translateY(" + num + "%)";
-        if (num === 0) {
-            document.querySelector("#point-homepage").classList.toggle('point-on');
-        }
-        if (num === -100) {
-            document.querySelector("#point-tech").classList.toggle('point-on');
-        }
-        if (num === -200) {
-            document.querySelector("#point-another").classList.toggle('point-on');
-        }
     }
-    function show_msg(msg, istrue){
-        if (istrue === true){
-            document.getElementById(msg).style.transform = "translate(-50%, -60px)";
-            document.getElementById(msg).style.opacity = "1";
-        }
-        else{
-            document.getElementById(msg).style.transform = "translate(-50%, -40px)";
-            document.getElementById(msg).style.opacity = "0"; 
+    function toggleResume(num){
+        if (num == 1) {
+            about.style.display = "block";
+            abouttext.style.display = "none";
+            closeabout.style.display = "block";
+            document.querySelector("h1").style.color = "rgb(87, 87, 87)";
+        } else {
+            about.style.display = "none";
+            abouttext.style.display = "block";
+            closeabout.style.display = "none";
+            document.querySelector("h1").style.color = "rgb(61, 115, 231)";
         }
     }
     </script>

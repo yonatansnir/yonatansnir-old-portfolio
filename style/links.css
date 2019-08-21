@@ -1,12 +1,21 @@
 a {
-  color: white;
   text-decoration: none;
+  color: #575757;
 }
 
 .point:hover {
-  border: #379fc9 solid 15px;
+  border: #3d73e7 solid 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.socialmedia i:hover {
+  color: #e77b3d;
+}
+
+.quote button:hover {
+  border: #e77b3d solid 3px;
+  color: #e77b3d;
 }
 
 .firstshow h2 {

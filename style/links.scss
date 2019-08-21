@@ -1,11 +1,28 @@
 a{
-    color: white;
     text-decoration: none;
+    color: rgb(87, 87, 87);
 }
+
+// all the hover affects
+
 .point:hover{
-    border: rgb(55, 159, 201) solid 15px;
+    border: rgb(61, 115, 231) solid 15px;
     transition: 0.5s;
 }
+.socialmedia{
+    i:hover{
+        color: rgb(231, 123, 61);
+    }
+}
+.quote{
+    button:hover{
+        border: rgb(231, 123, 61) solid 3px;
+        color: rgb(231, 123, 61);
+    }
+}
+
+// ------------------
+
 .firstshow h2{
     transform: translateY(100%);
     animation: showup 1.3s forwards;
