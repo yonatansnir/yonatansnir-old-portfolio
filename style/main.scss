@@ -256,3 +256,74 @@ footer{
         }
     }
 }
+@media only screen and (max-width: 500px) {
+    header{
+        padding: 10px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h4{
+        margin-top: 50px;
+        font-size: 30px;
+        span{
+            font-size: 25px;
+        }
+    }
+    .quote{
+        top: 20px;
+        button{
+            margin-top: 17px;
+            padding: 5px 25px;
+            line-height: 12px;
+            border: 2px solid;
+            font-size: 13px;
+        }
+    }
+    footer{
+        bottom: 10px;
+        width: 95%;
+    }
+    .content{
+        top: 50%;
+        width: 95%;
+    .page-indicator{
+        padding-right: 5%;
+    }
+    .point{
+        width: 10px;
+        height: 10px;
+    }
+    .socialmedia{
+        font-size: 10px;
+        padding-left: 5%;
+    }
+    #resume{
+        width: 95%;
+        padding: 0px;
+        p{
+            margin-top: 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+    }
+    #closeabout{
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        div{
+            width: 30px;
+            height: 5px;
+            transform: translateY(-50%) rotate(45deg);
+            &::after{
+                width: 30px;
+                height: 5px;
+            }
+        }
+    }
+}
+}
