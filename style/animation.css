@@ -1,8 +1,3 @@
-a {
-  text-decoration: none;
-  color: #575757;
-}
-
 .point:hover {
   border: #3d73e7 solid 15px;
   -webkit-transition: 0.5s;
@@ -69,4 +64,4 @@ a {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=links.css.map */
+/*# sourceMappingURL=animation.css.map */
