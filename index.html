@@ -45,21 +45,39 @@
             </div>
         </div>
         <div id="tech" class="page">
-            <div class="content" style="text-align: center; font-size: 40px; font-weight: 800;">coming soon...</div>
+            <div class="content">
+                <p>
+                    I provide web application solution for stores and managers to help them manage all there customeres and employees from anywhere on the globus.  
+                </p>
+                <div class="technology">
+                    <i id="c1" class="fab fa-html5"></i>
+                    <i id="c2" class="fab fa-css3-alt"></i>
+                    <i id="c3" class="fab fa-js"></i>
+                    <i id="c4" class="fab fa-react"></i>
+                    <i id="c5" class="fab fa-node"></i>
+                    <i id="c6" class="fab fa-php"></i>
+                </div>
+                <p>
+                    I'm working with the newest technology and keep update my project all the time for <strong>REALLY FAST</strong> result.
+                </p>
+            </div>
         </div>
         <div id="another" class="page">
+            <div class="content" style="text-align: center; font-size: 50px; font-weight: 800;">
+                COMING SOON
+            </div>
         </div>
     </div>
     <footer>
         <div class="page-indicator">
             <a href="javascript:page(0);">
-                <div class="point point-on" id="point-homepage" onmouseover="show_msg('try1', true)" onmouseout="show_msg('try1', false)"></div>
+                <div class="point point-on" id="point-0"></div>
             </a>
             <a href="javascript:page(-100)">  
-                <div class="point" id="point-tech" onmouseover="show_msg('try2', true)" onmouseout="show_msg('try2', false)"></div>
+                <div class="point" id="point--100"></div>
             </a>
             <a href="javascript:page(-200);">
-                <div class="point" id="point-another" onmouseover="show_msg('try3', true)" onmouseout="show_msg('try3', false)"></div>
+                <div class="point" id="point--200"></div>
             </a>
         </div>
         <div class="socialmedia">
@@ -69,27 +87,6 @@
             <i class="fab fa-whatsapp-square"></i>
         </div>
     </footer>
-<script type="text/javascript">
-    var pages = document.getElementById("pages");
-    var about = document.getElementById("about");
-    var abouttext = document.getElementById("about-text");
-    var closeabout = document.getElementById("closeabout"); 
-    function page(num){
-        pages.style.transform = "translateY(" + num + "%)";
-    }
-    function toggleResume(num){
-        if (num == 1) {
-            about.style.display = "block";
-            abouttext.style.display = "none";
-            closeabout.style.display = "block";
-            document.querySelector("h1").style.color = "rgb(87, 87, 87)";
-        } else {
-            about.style.display = "none";
-            abouttext.style.display = "block";
-            closeabout.style.display = "none";
-            document.querySelector("h1").style.color = "rgb(61, 115, 231)";
-        }
-    }
-    </script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

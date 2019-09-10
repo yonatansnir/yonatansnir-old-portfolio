@@ -1,4 +1,4 @@
-@import 'variable';
+@import '_variable';
 
 *{box-sizing: border-box; margin: 0; padding: 0;}
 html, body {margin: 0; padding: 0; overflow: hidden; height: 100vh; font-family: 'Roboto Slab', sans-serif; color: $color1;}
@@ -9,11 +9,13 @@ a{
     text-decoration: none;
     color: rgb(87, 87, 87);
 }
-@import 'components/header';
-@import 'conponents/content';
-@import 'components/footer';
-@import 'components/about';
-@import 'components/email';
+@import 'components/_header';
+@import 'components/_content';
+@import 'components/_footer';
+@import 'components/_about';
+@import 'components/_email';
+@import 'components/technology';
+
 .hide {overflow: hidden;}
 
 #pages{
