@@ -1,13 +1,14 @@
 @import './variable';
 
 .point:hover{
-    border: $color2 solid 15px;
+    border: $color2 solid 17px;
+    background-color: $color2;
     transition: 0.5s;
 }
 @media ($bp1){
     .point:hover{border-width:11px;}
 }
-@media ($bp2-min) and ($bp2-max){
+@media #{$bp2}{
     .point:hover{border-width:12px;}
 }
 

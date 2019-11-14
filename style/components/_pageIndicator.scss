@@ -1,0 +1,39 @@
+@import '../variable';
+.page-indicator{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    @media ($bp1){
+        right: 2px;
+    }
+    @media #{$bp2}{
+        right: 2px;
+    }
+}
+.point{
+    width: 35px;
+    height: 35px;
+    border: 8px solid $color1;
+    border-radius: 50%;
+
+    @media ($bp1){
+        width: 23px;
+        height: 23px;
+    }
+    @media #{$bp2}{
+        width: 28px;
+        height: 28px;
+    }
+
+    &-on{
+        border-color: $color2;
+        background-color: $color2;
+    }
+}

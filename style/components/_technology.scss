@@ -8,11 +8,12 @@
 @media ($bp1){
     #tech .content p{font-size: 18px; margin: 10px;}
 }
-@media ($bp2-min) and (max-width: 880px){
+@media #{$bp2}{
     #tech .content p{font-size: 25px; margin: 10px}
 }
 .technology{
     width: 200px;
+    height: 150px;
     margin: auto;
     text-align: center;
     i{
@@ -26,4 +27,4 @@
 #c3{color: #F0DB4F}
 #c4{color: #00d8ff}
 #c5{color: #68A063}
-#c6{color: #787CB5}
+// #c6{color: #787CB5}

@@ -78,7 +78,7 @@ h4{
         }
     }
 }
-@media ($bp2-min) and ($bp2-max){
+@media #{$bp2}{
     #resume {width: 90%; padding: 30px; text-align: center;
         p {margin-top: 20px; text-align: left; font-size: 20px;}
     }

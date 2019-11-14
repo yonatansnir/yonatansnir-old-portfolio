@@ -68,6 +68,65 @@ h1 {
   }
 }
 
+.page-indicator {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 3;
+}
+
+@media (max-width: 500px) {
+  .page-indicator {
+    right: 2px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  .page-indicator {
+    right: 2px;
+  }
+}
+
+.point {
+  width: 35px;
+  height: 35px;
+  border: 8px solid #575757;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .point {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  .point {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.point-on {
+  border-color: #3d73e7;
+  background-color: #3d73e7;
+}
+
 h2 {
   font-weight: 100;
   font-size: 50px;
@@ -94,7 +153,6 @@ h2 span {
   position: relative;
   top: 55px;
   font-size: 30px;
-  font-style: italic;
 }
 
 .quote button {
@@ -156,37 +214,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 3;
 }
 
-.page-indicator {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-right: 30%;
-}
-
-.point {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 6px solid #575757;
-}
-
-.point-on {
-  border: #3d73e7 6px solid;
-}
-
 .socialmedia {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +229,40 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 35px;
-  padding-left: 30%;
+}
+
+.socialmedia a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 500px) {
+  .socialmedia svg {
+    height: 23px;
+    width: 23px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  .socialmedia svg {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 751px) {
+  .socialmedia svg {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.socialmedia svg:hover {
+  fill: #e77b3d;
 }
 
 @media (max-width: 500px) {
@@ -202,16 +270,8 @@ footer {
     bottom: 10px;
     width: 95%;
   }
-  .page-indicator {
-    padding-right: 10%;
-  }
   .socialmedia {
     font-size: 23px;
-    padding-left: 10%;
-  }
-  .point {
-    width: 23px;
-    height: 23px;
   }
 }
 
@@ -219,16 +279,8 @@ footer {
   footer {
     bottom: 20px;
   }
-  .page-indicator {
-    padding-right: 20%;
-  }
-  .point {
-    width: 25px;
-    height: 25px;
-  }
   .socialmedia {
     font-size: 28px;
-    padding-left: 20%;
   }
 }
 
@@ -423,7 +475,7 @@ h4 span {
   }
 }
 
-@media (min-width: 501px) and (max-width: 880px) {
+@media (min-width: 501px) and (max-width: 750px) {
   #tech .content p {
     font-size: 25px;
     margin: 10px;
@@ -432,6 +484,7 @@ h4 span {
 
 .technology {
   width: 200px;
+  height: 150px;
   margin: auto;
   text-align: center;
 }
@@ -460,10 +513,6 @@ h4 span {
 
 #c5 {
   color: #68A063;
-}
-
-#c6 {
-  color: #787CB5;
 }
 
 .hide {

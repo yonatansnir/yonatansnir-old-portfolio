@@ -1,5 +1,6 @@
 .point:hover {
-  border: #3d73e7 solid 15px;
+  border: #3d73e7 solid 17px;
+  background-color: #3d73e7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

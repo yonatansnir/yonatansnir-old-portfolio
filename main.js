@@ -26,11 +26,12 @@ function toggleResume(num){
 
 var current = 1;
 setInterval(() => {
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 5; i++) {
         document.getElementById("c"+i).style.display = "none";  
     }
     document.getElementById("c"+current).style.display = "block";
     
-    if (current > 5) {current = 1}
-    else {current++};
+    current > 4 ? current = 1 : current++;
+    // if (current > 5) {current = 1}
+    // else {current++};
 }, 1200);

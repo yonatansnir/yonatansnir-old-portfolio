@@ -5,39 +5,41 @@ footer{
     transform: translateX(-50%);
     width: 85%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 3;
 }
-.page-indicator{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30%;
-}
-.point{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 6px solid $color1;
-    &-on {border: $color2 6px solid;}
-}
 .socialmedia{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    font-size: 35px;
-    padding-left: 30%;
+    font-size: 35px;    
+    a{
+        display: flex;
+        align-items: center;
+    }
+    svg{
+        @media ($bp1){
+            height: 23px;
+            width: 23px;
+        }
+        @media #{$bp2}{
+            height: 28px;
+            width: 28px;
+        }
+        @media ($bp3){
+            height: 35px;
+            width: 35px;
+        }
+    }
+    svg:hover{
+       fill: rgb(231, 123, 61); 
+    }
 }
 @media ($bp1){
     footer {bottom: 10px; width: 95%;}
-    .page-indicator {padding-right: 10%;}
-    .socialmedia {font-size: 23px; padding-left: 10%}
-    .point {width: 23px; height: 23px;}
+    .socialmedia {font-size: 23px;}
 }
-@media ($bp2-min) and ($bp2-max){
+@media #{$bp2}{
     footer {bottom: 20px;}
-    .page-indicator {padding-right: 20%}
-    .point {width: 25px; height: 25px;}
-    .socialmedia {font-size: 28px; padding-left: 20%;}
+    .socialmedia {font-size: 28px;}
 }

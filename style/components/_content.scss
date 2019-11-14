@@ -17,7 +17,6 @@ h2{
     position: relative;
     top: 55px;
     font-size: 30px;
-    font-style: italic;
     button{
         margin-top: 30px;
         background-color: rgba(255, 255, 255, 0);
@@ -39,7 +38,7 @@ h2{
     }
     .content{top: 50%; width: 95%;}
 }
-@media ($bp2-min) and ($bp2-max) {
+@media #{$bp2} {
     h2 {font-size: 35px;}
     .quote{font-size: 20px;
         button{margin-top: 25px; font-size: 15px; padding: 8px 35px; line-height: 25px;}
