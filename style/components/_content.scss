@@ -33,14 +33,14 @@ h2{
 }
 @media ($bp1) {
     h2{font-size: 32px;}
-    .quote{top: 20px;
+    .quote{top: 20px; font-size: 18px;
         button{margin-top: 17px; padding: 5px 25px; line-height: 12px; border: 2px solid; font-size: 13px;}
     }
     .content{top: 50%; width: 95%;}
 }
 @media #{$bp2} {
     h2 {font-size: 35px;}
-    .quote{font-size: 20px;
+    .quote{font-size: 18px;
         button{margin-top: 25px; font-size: 15px; padding: 8px 35px; line-height: 25px;}
     }
 }

@@ -175,6 +175,7 @@ h2 span {
   }
   .quote {
     top: 20px;
+    font-size: 18px;
   }
   .quote button {
     margin-top: 17px;
@@ -194,7 +195,7 @@ h2 span {
     font-size: 35px;
   }
   .quote {
-    font-size: 20px;
+    font-size: 18px;
   }
   .quote button {
     margin-top: 25px;
