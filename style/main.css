@@ -8,14 +8,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 100vh;
+  overflow: hidden;
   font-family: 'Roboto Slab', sans-serif;
   color: #575757;
 }
 
 body {
-  background-color: #fafafa;
   position: relative;
 }
 
@@ -69,7 +68,7 @@ h1 {
 }
 
 .page-indicator {
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -151,7 +150,7 @@ h2 span {
 .quote {
   text-align: center;
   position: relative;
-  top: 55px;
+  top: 10px;
   font-size: 30px;
 }
 
@@ -203,6 +202,36 @@ h2 span {
     padding: 8px 35px;
     line-height: 25px;
   }
+}
+
+#projects .content h1 span {
+  color: rgba(0, 0, 0, 0.212);
+  margin: 30px;
+  position: relative;
+  font-size: 2em;
+  left: 10px;
+  top: -20px;
+}
+
+#projects .content h1 span::after {
+  content: '1.';
+  position: absolute;
+  font-size: 0.8em;
+  top: 20px;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.541);
+}
+
+#projects .content p {
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+#projects .content img {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: 300px;
 }
 
 footer {
@@ -484,15 +513,16 @@ h4 span {
 }
 
 .technology {
-  width: 200px;
-  height: 150px;
-  margin: auto;
+  display: none;
+  height: 80px;
+  margin: 20px auto;
   text-align: center;
 }
 
 .technology i {
-  font-size: 150px;
-  display: none;
+  font-size: 80px;
+  margin: 0px 20px;
+  display: inline;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -536,5 +566,24 @@ h4 span {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.background-lines {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.background-lines .bg {
+  width: 25%;
+  background-color: #fafafa;
+  border: 1px solid #efe7e7;
 }
 /*# sourceMappingURL=main.css.map */

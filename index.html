@@ -14,7 +14,6 @@
     <title>Yonatan Snir</title>
 </head>
 <body>
-    <hr style="left: 25%"><hr><hr style="left: 75%">
     <header>
         <h1>YS</h1>
         <h3><a id="about-text" href="javascript:toggleResume(1)">About me</a></h3>
@@ -31,13 +30,13 @@
         </div>
     </div>
     <div class="page-indicator">
-        <a href="javascript:page(0);">
+        <a href="#" onclick="page(0)">
             <div class="point point-on" id="point-0"></div>
         </a>
-        <a href="javascript:page(-100)">  
+        <a href="#" onclick="page(-100)">  
             <div class="point" id="point--100"></div>
         </a>
-        <a href="javascript:page(-200);">
+        <a href="#" onclick="page(-200)">
             <div class="point" id="point--200"></div>
         </a>
     </div>
@@ -48,18 +47,8 @@
                 <h2>Hello, <strong>I'm Yonatan</strong></h2>
                 </div>
                 <div class="hide secoundshow">
-                <h2>a <span>full-stack</span> developer <br>and <span>UI Designer</span> from Israel</h2>
+                <h2>a <span>Full-stack</span> developer from Israel</h2>
                 </div>
-                <div class="quote">How the things feel, is the most importent thing!
-                    <br><button>SEE MY PROJECT</button>
-                </div>
-            </div>
-        </div>
-        <div id="tech" class="page">
-            <div class="content">
-                <p>
-                    I provide web application solution for stores and managers to help them manage all there customeres and employees from anywhere on the globus.  
-                </p>
                 <div class="technology">
                     <i id="c1" class="fab fa-html5"></i>
                     <i id="c2" class="fab fa-css3-alt"></i>
@@ -68,14 +57,23 @@
                     <i id="c5" class="fab fa-node"></i>
                     <!-- <i id="c6" class="fab fa-php"></i> -->
                 </div>
-                <p>
-                    I'm working with the newest technology and keep update my project all the time for <strong>REALLY FAST</strong> result.
-                </p>
+                <div class="quote">How the things feel, is the most importent thing!
+                    <br><button>SEE MY PROJECT</button>
+                </div>
+            
+            </div>
+        </div>
+        <div id="projects" class="page">
+            <div class="content">
+                <h1><span>1.</span>CLUBLOG</h1>
+                <p>What to do with something like you brow???</p>
+                <img src="./assets/smartphone-pngrepo-comIm.png" alt="Application" />
             </div>
         </div>
         <div id="another" class="page">
             <div class="content" style="text-align: center; font-size: 50px; font-weight: 800;">
-                COMING SOON
+                HEY! SEND ME A MESSAGE
+                <span class="hand-point"><i class="far fa-hand-point-down"></i></span>
             </div>
         </div>
     </div>
@@ -94,6 +92,12 @@
             </a>
         </div>
     </footer>
+    <div class="background-lines">
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+    </div>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

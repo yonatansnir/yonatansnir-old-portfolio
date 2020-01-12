@@ -1,6 +1,5 @@
-@import '../variable';
 .page-indicator{
-    position: absolute;
+    position: fixed;
     right: 40px;
     top: 50%;
     transform: translateY(-50%);

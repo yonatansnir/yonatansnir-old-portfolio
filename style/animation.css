@@ -52,6 +52,35 @@
   opacity: 0;
 }
 
+.hand-point {
+  display: block;
+  font-size: 1.5em;
+  -webkit-animation: handpoint 0.7s alternate infinite linear;
+          animation: handpoint 0.7s alternate infinite linear;
+}
+
+@-webkit-keyframes handpoint {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+@keyframes handpoint {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
 @-webkit-keyframes showup {
   100% {
     -webkit-transform: translateY(0%);

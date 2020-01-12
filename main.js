@@ -10,6 +10,7 @@ function page(num){
     document.getElementById("point--200").classList.remove("point-on");
     document.getElementById("point-"+num).classList.toggle("point-on");
 }
+
 function toggleResume(num){
     if (num == 1) {
         about.style.display = "block";
@@ -24,14 +25,14 @@ function toggleResume(num){
     }
 }
 
-var current = 1;
-setInterval(() => {
-    for (let i = 1; i <= 5; i++) {
-        document.getElementById("c"+i).style.display = "none";  
-    }
-    document.getElementById("c"+current).style.display = "block";
+// var current = 1;
+// setInterval(() => {
+//     for (let i = 1; i <= 5; i++) {
+//         document.getElementById("c"+i).style.display = "none";  
+//     }
+//     document.getElementById("c"+current).style.display = "block";
     
-    current > 4 ? current = 1 : current++;
-    // if (current > 5) {current = 1}
-    // else {current++};
-}, 1200);
+//     current > 4 ? current = 1 : current++;
+//     // if (current > 5) {current = 1}
+//     // else {current++};
+// }, 2500);
