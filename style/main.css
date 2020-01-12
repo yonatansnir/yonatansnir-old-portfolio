@@ -204,34 +204,147 @@ h2 span {
   }
 }
 
+#projects .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  #projects .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  #projects .content h1 {
+    font-size: 25px;
+  }
+}
+
 #projects .content h1 span {
-  color: rgba(0, 0, 0, 0.212);
-  margin: 30px;
+  font-weight: 500;
+  color: #575757;
+  margin-right: 10px;
   position: relative;
-  font-size: 2em;
-  left: 10px;
-  top: -20px;
+  font-size: 1.5em;
 }
 
 #projects .content h1 span::after {
-  content: '1.';
+  content: '1';
   position: absolute;
-  font-size: 0.8em;
-  top: 20px;
-  left: 20px;
-  color: rgba(0, 0, 0, 0.541);
+  font-size: 2.5em;
+  bottom: -20px;
+  left: -40px;
+  color: rgba(0, 0, 0, 0.081);
 }
 
-#projects .content p {
-  margin-left: 30px;
-  font-size: 25px;
+@media (max-width: 500px) {
+  #projects .content h1 span::after {
+    left: -10px;
+  }
+}
+
+#projects .content h1 span::before {
+  position: absolute;
+  content: '';
+  width: 145px;
+  height: 7px;
+  background-color: #e77b3d;
+  bottom: 0px;
+  left: 30px;
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  #projects .content h1 span::before {
+    width: 120px;
+    height: 5px;
+    left: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .content h1 span::before {
+    width: 90px;
+    height: 3px;
+    left: 22px;
+  }
+}
+
+#projects .content .extra-desc {
+  margin: 15px 0px;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #b4b4b4;
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  #projects .content .extra-desc {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .content .extra-desc {
+    font-size: 1em;
+  }
+}
+
+#projects .content .desc {
+  font-size: 17px;
+}
+
+@media bp2 {
+  #projects .content .desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .content .desc {
+    font-size: 15px;
+  }
 }
 
 #projects .content img {
-  position: absolute;
-  top: -100px;
-  right: 0px;
-  width: 300px;
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  #projects .content img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  #projects .content img {
+    width: 190px;
+  }
 }
 
 footer {
