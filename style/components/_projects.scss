@@ -10,6 +10,10 @@
     }
     @media ($bp1){
         flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        width: 85%;
+        margin: 5px;
     }
     h1{
         @media #{$bp2}{
