@@ -10,7 +10,14 @@
     justify-content: space-between;
     z-index: 3;
     @media ($bp1){
-        right: 2px;
+        // right: 2px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 75%;
+        height: 40px;
+        top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
     }
     @media #{$bp2}{
         right: 2px;

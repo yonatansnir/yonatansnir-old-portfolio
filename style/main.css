@@ -90,7 +90,18 @@ h1 {
 
 @media (max-width: 500px) {
   .page-indicator {
-    right: 2px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    width: 75%;
+    height: 40px;
+    top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -150,7 +161,7 @@ h2 span {
 .quote {
   text-align: center;
   position: relative;
-  top: 10px;
+  top: 20px;
   font-size: 30px;
 }
 
@@ -391,8 +402,8 @@ footer {
 
 @media (max-width: 500px) {
   .socialmedia svg {
-    height: 23px;
-    width: 23px;
+    height: 53px;
+    width: 25px;
   }
 }
 
@@ -420,7 +431,8 @@ footer {
     width: 95%;
   }
   .socialmedia {
-    font-size: 23px;
+    font-size: 25px;
+    width: 75%;
   }
 }
 
@@ -430,6 +442,7 @@ footer {
   }
   .socialmedia {
     font-size: 28px;
+    width: 75%;
   }
 }
 
