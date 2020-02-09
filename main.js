@@ -24,3 +24,7 @@ function toggleResume(num){
         document.querySelector("h1").style.color = "rgb(61, 115, 231)";
     }
 }
+
+window.onscroll(function() {
+    alert('hello')
+})
