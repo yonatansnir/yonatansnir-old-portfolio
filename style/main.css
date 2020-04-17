@@ -9,13 +9,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden;
   font-family: 'Roboto Slab', sans-serif;
   color: #575757;
 }
 
 body {
   position: relative;
+  overflow: hidden;
 }
 
 body hr {

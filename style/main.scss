@@ -1,8 +1,8 @@
 @import '_variable';
 
 *{box-sizing: border-box; margin: 0; padding: 0;}
-html, body {margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: 'Roboto Slab', sans-serif; color: $color1;}
-body{position: relative;
+html, body {margin: 0; padding: 0; height: 100vh; font-family: 'Roboto Slab', sans-serif; color: $color1;}
+body{position: relative; overflow: hidden;
     hr{background-color: rgb(224, 224, 224); border: 0px; position: absolute; z-index: 0; left: 50%; width: 1px; height: 100%;}
 }
 a{
