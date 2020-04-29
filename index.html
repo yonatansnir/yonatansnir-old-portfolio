@@ -3,71 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Stack Developer">
-    <!-- <meta name="author" content="Yonatan Snir"> -->
+    <meta name="mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/07bb6216fc.js"></script>
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/animation.css">
+    <meta name="description" content="Full Stack Developer">
+    <meta name="author" content="Yonatan Snir">
     <title>Yonatan Snir</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07bb6216fc.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
         <h1>YS</h1>
-        <h3><a id="about-text" href="javascript:toggleResume(1)">About me</a></h3>
+        <h3><a id="about-text" href="javascript:toggleResume()">About me</a></h3>
     </header>
-    <div id="closeabout" onclick="toggleResume(0)">
-        <div></div>
-    </div>
-    <div id="about">
-        <div id="resume">
-            <h4>hello, I'm <strong>Yonatan Snir. </strong><br>
-            <span>a web developer from Israel</span></h4>
-            <p>I live in Rishon Lezion. I've been attracted to web development since I was 14 years old. I've built hundreds of websites and web apps for enjoyment as well as for friends and customers.</p>
-            <p>Currently I'm a computer science student, but continue to learn and progress my real passion, which is developing product solutions.</p>
-            <p>I use the latest technologies, like <strong>HTML5</strong>, <strong>CSS3</strong>,<strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong>, to create the fastest applications with optimal user experience. That’s what I do. That’s what I love.</p>
-        </div>
-    </div>
-    <div class="page-indicator">
-        <a href="#" onclick="page(0)">
-            <div class="point point-on" id="point-0"></div>
-        </a>
-        <a href="#" onclick="page(1)">  
-            <div class="point" id="point--100"></div>
-        </a>
-        <a href="#" onclick="page(2)">
-            <div class="point" id="point--200"></div>
-        </a>
-    </div>
-    <div id="pages">
-        <div id="homepage" class="page">
+    <div id="fullpage">
+
+        <div class="section">
             <div class="content">
                 <div class="hide firstshow">
-                <h2>Hello, <strong>I'm Yonatan</strong></h2>
+                    <h2>Hello, <strong>I'm Yonatan</strong></h2>
                 </div>
                 <div class="hide secoundshow">
-                <h2>a <span>Full-stack</span> developer from Israel</h2>
+                    <h2>a <span>Full-stack</span> developer from Israel</h2>
                 </div>
-                <div class="quote">The only thing that matters more than how it looks, is how it feels.
-                    <br><button onclick="page(1)">SEE MY PROJECT</button>
+                <div class="quote">
+                    <div id="quote-animation">...</div>
+                    <button id="project-btn" onclick="page(1)">SEE MY PROJECT</button>
                 </div>
             </div>
         </div>
-        <div id="projects" class="page">
-            <div class="content">
-                <div style="text-align: center;">
-                    <img src="./assets/smartphone-pngrepo-comIm.png" alt="Application" />
-                </div>
+
+        <div class="section">
+            <div class="project">
                 <div>
-                    <h1><span>1</span>CLUBLOG</h1>
+                    <h1>CLUBLOG</h1>
                     <p class="extra-desc">Develop and Design</p>
                     <p class="desc">
                         Imagine hundreds of people working on the same events calendar. Hundreds of people trying to add and edit their own events.<br />
@@ -77,38 +51,66 @@
                         With the lastest technologies, Club Log is fast and secure.
                     </p>
                 </div>
+                <div class="screenshot"><img src="./assets/clublog-screenshot.png" alt="clublog screenshots"></div>
             </div>
+            <!-- <div class="project">
+                <div>
+                    <h1>SLOBBY</h1>
+                    <p class="extra-desc">Develop</p>
+                    <p class="desc">
+                        Imagine hundreds of people working on the same events calendar. Hundreds of people trying to add and edit their own events.<br />
+                        How do you ensure that a user can add and edit their own events without changing or deleting others? <br />
+                        This is Club Log. It allows hundreds and even thousnds of people to schedule their own events in one calendar, while maintaining the details of existing entries.<br />
+                        <br />
+                        With the lastest technologies, Club Log is fast and secure.
+                    </p>
+                </div>
+                <div style="height: 300px; width: 400px; background: red"></div>
+            </div> -->
         </div>
-        <div id="another" class="page">
+
+        <div class="section">
             <div class="content" style="text-align: center; font-size: 50px; font-weight: 800;">
-                <p style="font-size: .5em">HEY! SEND ME A MESSAGE<br /><br />
-                Yonatan941@gmail.com <br /><br />
+                <p style="font-size: .5em">HEY! SEND ME A MESSAGE 😄<br /><br />
+                📧 yonatan941@gmail.com 🖊️<br /><br />
                 Or just choose a platform to contact with me!
                 <span class="hand-point"><i class="far fa-hand-point-down"></i></span></p>
             </div>
         </div>
+
     </div>
     <footer>
-        <div class="socialmedia">
-            <a href="https://www.facebook.com/yonatan941" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/yonatan_snir/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/yonatansnir" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://wa.me/972545357249" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-            <a href="https://www.linkedin.com/in/yonatan-snir-bb6405191/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://codepen.io/yonatan-snir" target="_blank"><i class="fab fa-codepen"></i></a>
-            <a href="https://codesandbox.io/u/yonatansnir" target="_blank">
-                <svg fill="rgb(87, 87, 87)" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 6l10.455-6L22.91 6 23 17.95 12.455 24 2 18V6zm2.088 2.481v4.757l3.345 1.86v3.516l3.972 2.296v-8.272L4.088 8.481zm16.739 0l-7.317 4.157v8.272l3.972-2.296V15.1l3.345-1.861V8.48zM5.134 6.601l7.303 4.144 7.32-4.18-3.871-2.197-3.41 1.945-3.43-1.968L5.133 6.6z"/>
-                </svg>
-            </a>
-        </div>
+        <a href="https://www.facebook.com/yonatan941" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/yonatan_snir/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/yonatansnir" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://wa.me/972545357249" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+        <a href="https://www.linkedin.com/in/yonatan-snir-bb6405191/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://codepen.io/yonatan-snir" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://codesandbox.io/u/yonatansnir" target="_blank">
+            <svg fill="rgb(87, 87, 87)" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 6l10.455-6L22.91 6 23 17.95 12.455 24 2 18V6zm2.088 2.481v4.757l3.345 1.86v3.516l3.972 2.296v-8.272L4.088 8.481zm16.739 0l-7.317 4.157v8.272l3.972-2.296V15.1l3.345-1.861V8.48zM5.134 6.601l7.303 4.144 7.32-4.18-3.871-2.197-3.41 1.945-3.43-1.968L5.133 6.6z"/>
+            </svg>
+        </a>
     </footer>
+
     <div class="background-lines">
         <div class="bg"></div>
         <div class="bg"></div>
         <div class="bg"></div>
         <div class="bg"></div>
     </div>
-<script type="text/javascript" src="main.js"></script>
+
+    <div id="about">
+        <div id="resume">
+            <h4>hello, I'm <strong>Yonatan Snir. </strong><br>
+            <span>a web developer from Israel</span></h4>
+            <p>I live in Rishon Lezion. I've been attracted to web development since I was 14 years old. I've built hundreds of websites and web apps for enjoyment as well as for friends and customers.</p>
+            <p>Currently I'm a computer science student, but continue to learn and progress my real passion, which is developing product solutions.</p>
+            <p>I use the latest technologies, like <strong>HTML5</strong>, <strong>CSS3</strong>,<strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong>, to create the fastest applications with optimal user experience.<span> That’s what I do.<br />That’s what I love.</span></p>
+        </div>
+    </div>
+
+    <script lang="javascript" src="js/animation.js"></script>
+    <script lang="javascript" src="js/main.js"></script>
 </body>
 </html>

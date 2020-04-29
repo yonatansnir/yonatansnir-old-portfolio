@@ -1,0 +1,67 @@
+.project{
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    @media #{$bp1}{
+        flex-direction: column;
+    }
+    .screenshot{
+        text-align: right;
+        @media #{$bp1}{ text-align: center; }
+        @media #{$bp2}{ text-align: center; }
+        img{
+            margin-top: 20px;
+            width: 70%;
+            box-shadow: 0px 3px 5px rgb(216, 216, 216);
+            @media #{$bp1}{ width: 50% }
+            @media #{$bp2}{ width: 50% }
+        }
+    }
+    h1{
+        position: relative;
+        display: inline-block;
+        color: $color2;
+        &:after{
+            left: 0px;
+            bottom: 0px;
+            position:absolute;
+            width: 100%;
+            content: '';
+            height: 4px;
+            background-color: $color4;
+        }
+        @media #{$bp2}{
+            font-size: 25px;
+        }
+        span{
+            font-weight: 500;
+            color: $color1;
+            margin-right: 10px;
+            position: relative;
+            font-size: 1.5em;
+        }
+    }
+    .extra-desc{
+        margin: 15px 0px;
+        font-weight: 100;
+        font-size: 1.5em;
+        color: rgb(180, 180, 180);
+        @media #{$bp2}{
+            font-size: 1.2em;
+        }
+        @media ($bp1){
+            font-size: 1em;
+        }
+    }
+    .desc{
+        font-size: 17px;
+        @media #{bp2} {
+            font-size: 15px;            
+        }
+        @media ($bp1){
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+footer{
+    position: fixed;
+    z-index: 10;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media #{$bp1}{ bottom: 20px; font-size: 30px; width: 85% }
+    @media #{$bp2}{ bottom: 20px; width: 75% }
+    svg{
+        display: block;
+        width: 35px;
+        height: 35px;
+        @media #{$bp1}{ width: 30px; height: 30px}
+        &:hover{
+            fill: $color4;
+        }
+    }
+    a:hover{
+        color: $color4;
+    }
+}
