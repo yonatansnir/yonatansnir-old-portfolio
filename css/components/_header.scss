@@ -9,12 +9,20 @@ header{
     justify-content: space-between;
     @media #{$bp1} { width: 95%; top: 20px } 
     @media #{$bp2} { width: 95%; top: 20px } 
+
+    #logo{
+        width: 48px;
+        fill: #3D73E7;
+        @media #{$bp1} {width: 32px}
+    }
     h3{
         font-weight: 200;
         font-size: 1.2em;
     }
     h1{
         font-size: 2em;
+        // text-indent: -9999px;
+        // background-image: url('../../YS\ LOGO.png');
         color: $color2;
         @media #{$bp1} {font-size: 1.5em;}
     }

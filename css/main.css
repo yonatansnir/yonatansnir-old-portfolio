@@ -137,6 +137,17 @@ header {
   }
 }
 
+header #logo {
+  width: 48px;
+  fill: #3D73E7;
+}
+
+@media (max-width: 600px) {
+  header #logo {
+    width: 32px;
+  }
+}
+
 header h3 {
   font-weight: 200;
   font-size: 1.2em;
@@ -189,6 +200,7 @@ header h1 {
 .content h2 span {
   background-color: #575757;
   color: #fafafa;
+  padding: 0px 2px;
 }
 
 @media (max-width: 600px) {
@@ -228,7 +240,7 @@ header h1 {
 }
 
 .content .quote button {
-  opacity: 0;
+  opacity: 1;
   margin-top: 25px;
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #575757;
@@ -388,7 +400,7 @@ header h1 {
 footer {
   position: fixed;
   z-index: 10;
-  bottom: 25px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
