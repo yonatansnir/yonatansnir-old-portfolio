@@ -8,9 +8,10 @@
     <meta name="description" content="Full Stack Developer">
     <meta name="author" content="Yonatan Snir">
     <title>Yonatan Snir</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> -->
+    <link rel="icon" type="image/png" sizes="48x48" href="YS LOGO.png" />
     <link rel="manifest" href="assets/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07bb6216fc.js"></script>
@@ -18,7 +19,14 @@
 </head>
 <body>
     <header>
-        <h1>YS</h1>
+        <!-- <h1>YS</h1> -->
+        <svg id="logo" viewBox="0 0 341 343" xmlns="http://www.w3.org/2000/svg">
+            <rect width="341" height="342.1" fill="none"/>
+            <rect x="15" y="13" width="310" height="311" rx="36" />
+            <path d="M123.367 289V241.904L83.376 156.644H115.45L127.224 187.094C129.119 192.101 130.946 196.973 132.705 201.71C134.464 206.311 136.224 211.183 137.983 216.326H138.795C140.69 211.183 142.517 206.311 144.276 201.71C146.171 196.973 148.065 192.101 149.96 187.094L161.937 156.644H193.199L153.208 241.904V289H123.367Z" fill="white"/>
+            <path d="M243.916 291.436C235.254 291.436 226.593 289.812 217.932 286.564C209.27 283.316 201.624 278.579 194.993 272.354L212.045 251.851C216.781 255.911 222.059 259.227 227.879 261.798C233.698 264.369 239.314 265.655 244.728 265.655C257.043 265.655 263.201 261.392 263.201 252.866C263.201 248.671 261.441 245.626 257.923 243.731C254.539 241.701 249.938 239.468 244.119 237.032L226.864 229.724C220.097 227.017 213.939 222.754 208.391 216.935C202.977 210.98 200.271 203.199 200.271 193.59C200.271 182.628 204.669 173.358 213.466 165.779C222.262 158.065 233.563 154.208 247.367 154.208C254.945 154.208 262.524 155.697 270.103 158.674C277.681 161.651 284.313 165.982 289.997 171.666L274.772 190.545C270.441 187.162 266.11 184.59 261.78 182.831C257.449 180.936 252.645 179.989 247.367 179.989C242.224 179.989 238.096 181.072 234.984 183.237C232.006 185.267 230.518 188.177 230.518 191.966C230.518 196.026 232.412 199.071 236.202 201.101C240.126 203.131 244.931 205.296 250.615 207.597L267.667 214.499C275.651 217.747 282.012 222.213 286.749 227.897C291.485 233.581 293.854 241.092 293.854 250.43C293.854 261.392 289.455 271.001 280.659 279.256C271.997 287.376 259.75 291.436 243.916 291.436Z" fill="white"/>
+        </svg>
+        
         <h3><a id="about-text" href="javascript:toggleResume()">About me</a></h3>
     </header>
     <div id="fullpage">
@@ -33,12 +41,14 @@
                 </div>
                 <div class="quote">
                     <div id="quote-animation">...</div>
-                    <button id="project-btn" onclick="page(1)">SEE MY PROJECT</button>
+                    <a href="http://blog.yonisnir.com/">
+                        <button id="project-btn">GO TO MY BLOG</button>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <!-- <div class="section">
             <div class="project">
                 <div>
                     <h1>CLUBLOG</h1>
@@ -52,7 +62,7 @@
                     </p>
                 </div>
                 <div class="screenshot"><img src="./assets/clublog-screenshot.png" alt="clublog screenshots"></div>
-            </div>
+            </div> -->
             <!-- <div class="project">
                 <div>
                     <h1>SLOBBY</h1>
@@ -67,7 +77,7 @@
                 </div>
                 <div style="height: 300px; width: 400px; background: red"></div>
             </div> -->
-        </div>
+        <!-- </div>
 
         <div class="section">
             <div class="content" style="text-align: center; font-size: 50px; font-weight: 800;">
@@ -76,7 +86,7 @@
                 Or just choose a platform to contact with me!
                 <span class="hand-point"><i class="far fa-hand-point-down"></i></span></p>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <footer>
