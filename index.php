@@ -1,3 +1,1 @@
-<?php include_once('index.html') 
-// Just checking
-?>
+<?php include_once('index.html') ?>
