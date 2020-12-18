@@ -1,10 +1,4 @@
-.content{
-    position: absolute;
-    z-index: 9;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
+.content-left{
     text-align: left;
     @media #{$bp1}{ width: 95%;}
     @media #{$bp2} { width: 85% }
@@ -19,41 +13,50 @@
         @media #{$bp1} { font-size: 35px;}
         @media #{$bp2} { font-size: 45px; }
     }
-    .quote{
-        text-align: center;
-        position: relative;
-        top: 20px;
-        margin-top: 20px;
-        font-size: 30px;
-        #quote-animation{
-            margin: 0px;
-        }
-        @media #{$bp1} {font-size: 18px;}
-        @media #{$bp2} { font-size: 26px; }
-        button{
-            opacity: 1;
-            margin-top: 25px;
-            background-color: rgba(255, 255, 255, 0);
-            border: 3px solid $color1;
-            color: $color1;
-            // font-weight: 550;
-            font-weight: 550;
-            cursor: pointer;
-            font-size: 20px;
-            border-radius: 30px;
-            padding: 10px 40px;
-            outline: none;
-            line-height: 30px;
-            opacity: 0;
-            transition: opacity 1s;
+    button{
+        opacity: 1;
+        margin-top: 35px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 3px solid $color1;
+        color: $color1;
+        // font-weight: 550;
+        font-weight: 550;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 30px;
+        padding: 7px 25px;
+        outline: none;
+        line-height: 20px;
+        transition: opacity 1s;
+        @media #{$bp1}{ font-size: 10px; padding: 5px 20px; border: 2px solid $color1; margin-top: 20px;}
+        @media #{$bp2} { font-size: 15px; padding: 7px 25px;}
 
-            @media #{$bp1}{ font-size: 15px; padding: 6px 25px;}
-            @media #{$bp2} { font-size: 20px; padding: 9px 34px;}
-
-            &:hover{
-                color: $color4;
-                border: 3px solid $color4;
-            }
+        &:hover{
+            color: $color4;
+            border: 3px solid $color4;
         }
+    }
+}
+.mypic{
+    width: 200px; 
+    position: relative;
+    height: 200px; 
+    border-radius: 50px; 
+    display: inline-block;
+    background-image: url('../../assets/me.jpg');
+    background-size: cover;
+    @media #{$bp1}{ width: 100px; height: 100px; border-radius: 25px; }
+    &::before{
+        top: 7px;
+        left: 7px;
+        width: 200px;
+        height:200px;
+        z-index: -1;
+        border-radius: 50px;
+        display: inline-block;
+        position: absolute;
+        background: rgb(87, 87, 87); 
+        content:'';
+        @media #{$bp1}{ width: 100px; height: 100px; border-radius: 25px; }
     }
 }

@@ -27,3 +27,54 @@
         }
     }
 }
+
+.bg-box{
+    position: absolute;
+    bottom: -50%;
+}
+.box1{
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: $color4;
+    opacity: 0.3;
+    animation: movefrombottom 25s linear infinite, moverotate 10s linear infinite reverse;
+}
+.box2{
+    width: 150px;
+    left: 50%;
+    height: 150px;
+    border-radius: 50px;
+    background-color: $color4;
+    opacity: 0.2;
+    animation: movefrombottom 50s linear infinite, moverotate 20s linear infinite ;
+    animation-delay: 5s;
+}
+.box3{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    left: 25%;
+    background-color: $color4;
+    opacity: 0.5;
+    animation: movefrombottom 35s linear infinite, moverotate 6s linear infinite;
+}
+.box4{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    right: 10%;
+    background-color: $color4;
+    opacity: 0.2;
+    animation:  movefrombottom 22s linear infinite, moverotate 12s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes movefrombottom{
+    from{ bottom: -200px;}
+    to{ bottom: 110vh; }
+}
+@keyframes moverotate{
+    from{ transform: rotate(0); }
+    to{  transform: rotate(360deg); }
+}

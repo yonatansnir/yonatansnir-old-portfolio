@@ -10,8 +10,7 @@ $bp3: 'min-width: 751px';
 *{padding: 0px; margin: 0px; box-sizing: border-box;}
 body {
     font-family: 'Roboto Slab', sans-serif; color: $color1; background: $color3;
-    -ms-overflow-style: none;
-    overflow-x: hidden;
+    //-ms-overflow-style: none;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -20,11 +19,36 @@ a{
     text-decoration: none;
     color: rgb(87, 87, 87);
 }
-#fullpage{
-    position: absolute;
-    width: 100%;
-    .section{
-        min-height: 100vh;
-        position: relative;
+section{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    padding: 0px 10%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    @media #{$bp1}{ flex-direction: column; justify-content: center; padding: 0px 5% }
+    .content-left{
+        flex-grow: 1;
+        padding-right: 30px;
+        @media #{$bp1}{ flex-grow: 0; }
     }
+    .content-right{
+        text-align: right;
+        flex-grow: 1;
+        @media #{$bp1}{ flex-grow: 0; margin-top: 40px }
+    }
+    p{
+        max-width: 500px;
+        margin-top: 20px;
+        line-height: 2rem;
+        font-size: large;
+        @media #{$bp1}{ line-height: 1.7rem;}
+        //margin: 40px 0px;
+    }
+}
+hr{
+    background: rgb(228, 228, 228);
+    border: none;
+    height: 2px;
 }

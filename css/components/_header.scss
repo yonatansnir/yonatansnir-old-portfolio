@@ -18,6 +18,9 @@ header{
     h3{
         font-weight: 200;
         font-size: 1.2em;
+        a:hover{
+            color: $color4;
+        }
     }
     h1{
         font-size: 2em;
