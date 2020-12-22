@@ -8,6 +8,7 @@ $bp2: '(min-width: 601px) and (max-width: 850px)';
 $bp3: 'min-width: 751px';
 
 *{padding: 0px; margin: 0px; box-sizing: border-box;}
+html{scroll-behavior: smooth;}
 body {
     font-family: 'Roboto Slab', sans-serif; color: $color1; background: $color3;
     //-ms-overflow-style: none;
@@ -22,7 +23,7 @@ a{
 section{
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 10%;
     margin: auto;
     display: flex;
@@ -31,6 +32,23 @@ section{
     .content-left{
         flex-grow: 1;
         padding-right: 30px;
+        h4{
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-top: 50px; 
+        }
+        h3{
+            margin-top: 20px;
+            margin-right: 10px;
+            font-weight: 200;
+            border-radius: 4px;
+            padding: 0px 6px;
+            display: inline-block;
+            color: white;
+            background-color: rgb(148, 148, 148);
+            letter-spacing: 2px;
+            @media #{$bp1}, #{$bp2}{ font-size: 0.9rem;}
+        }
         @media #{$bp1}{ flex-grow: 0; }
     }
     .content-right{
@@ -48,7 +66,19 @@ section{
     }
 }
 hr{
-    background: rgb(228, 228, 228);
+    background: rgb(238, 238, 238);
     border: none;
-    height: 2px;
+    height: 10px;
+}
+.dots{
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    margin: 30px auto;
+    span{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $color1;
+    }
 }

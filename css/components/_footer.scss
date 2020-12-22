@@ -1,16 +1,22 @@
 footer{
-    position: fixed;
-    z-index: 10;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+    // position: fixed;
+    // z-index: 10;
+    // top: 200px;
+    // bottom: 10px;
+    // right: 0px;
+    // right: 20px;
+    // transform: translateX(-50%);
+    // width: 50%;
     font-size: 35px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @media #{$bp1}{ bottom: 20px; font-size: 30px; width: 85% }
-    @media #{$bp2}{ bottom: 20px; width: 75% }
+    letter-spacing: 5px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    @media #{$bp1}{ font-size: 30px;}
+    // @media #{$bp2}{ bottom: 20px; width: 75% }
     svg{
         display: block;
         width: 35px;
@@ -23,4 +29,31 @@ footer{
     a:hover{
         color: $color4;
     }
+}
+.contact{
+    background-color: rgb(238, 238, 238);
+    min-height: initial;
+    align-items: flex-start;
+    padding: 50px 10% 20px 10%;
+    @media #{$bp1}{
+        flex-direction: column;
+    }
+    .content-left{
+        padding-right: 30px;
+        @media #{$bp1}{ text-align: center;padding-right: initial}
+    }
+    .content-right{
+        font-size: larger;
+        text-align: left;
+        max-width: 50%;
+        @media #{$bp1}{
+            max-width: 100%;
+        }
+    }
+    h2{
+        font-size: 2rem;
+        display: block;
+        text-decoration: underline $color4 5px;
+    }
+
 }

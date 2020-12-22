@@ -16,18 +16,6 @@
     100%{ transform: translateY(0%);}
 }
 
-.hand-point{
-    display: block;
-    font-size: 1.5em;
-    animation: MoveHand 1s infinite;
-    animation-direction: alternate;
-    @keyframes MoveHand {
-        100%{
-            transform: translateY(30px);
-        }
-    }
-}
-
 .bg-box{
     position: absolute;
     bottom: -50%;
@@ -77,4 +65,29 @@
 @keyframes moverotate{
     from{ transform: rotate(0); }
     to{  transform: rotate(360deg); }
+}
+
+.keep-scrolling{
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span:nth-child(1){
+        display: block;
+        font-weight: 200;
+        letter-spacing: 3px;
+        font-size: smaller;
+    }
+    span:nth-child(2){
+        position: absolute;
+        transform: translateY(0px);
+        animation: movescroll infinite alternate 1s;
+    }
+}
+
+@keyframes movescroll{
+    0%{        transform: translateY(0px);    }
+    100%{        transform: translateY(10px);    }
 }

@@ -1,14 +1,14 @@
 header{
     position: fixed;
     z-index: 11;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
+    padding: 20px 15px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    @media #{$bp1} { width: 95%; top: 20px } 
-    @media #{$bp2} { width: 95%; top: 20px } 
+    // @media #{$bp1} { width: 95%; top: 20px } 
+    // @media #{$bp2} { width: 95%; top: 20px } 
 
     #logo{
         width: 48px;
